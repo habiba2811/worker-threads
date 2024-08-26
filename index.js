@@ -1,5 +1,6 @@
 const express = require("express");
 const {Worker} = require("worker_threads")
+
 const app = express()
 const port = process.env.PORT || 3000;
 
@@ -20,7 +21,6 @@ app.get("/blocking", (req,res) => {
 
 });
 
-app.listen
-(port, () => {
+app.listen(port, () => {
     console.log(`App is listening on port ${port}`)
 });
